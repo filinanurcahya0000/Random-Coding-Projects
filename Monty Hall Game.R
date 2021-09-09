@@ -13,6 +13,7 @@ montyhall <- function(x) {
     }
     return(resultslist)
 }
+
 # Function to run through Monty Hall game for n times.
 n <- c(seq(100,10000,10))
 
