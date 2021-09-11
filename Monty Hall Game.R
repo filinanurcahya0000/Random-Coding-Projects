@@ -35,7 +35,7 @@ ggplot() + geom_line(aes(x = list1$V1, y = list1$`1`, color = "Stay")) + geom_li
 print(montyhall(1))
 
 # A hundred run throughs of the game. 
-hundredtrials <- montyhall(1:100)
+hundredtrials <- replicate(100,montyhall(1))
 table <- table(hundredtrials)
-prop.table(table)
-
+table <- prop.table(table)
+table
